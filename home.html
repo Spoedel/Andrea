@@ -1,0 +1,80 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Message for You</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapers.com/images/hd/miffy-with-father-bunny-y6w2gckgbtvdcdlq.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #message-container {
+    display: none;
+    animation: fadeIn 2s ease-in-out;
+    background-color: #fff; 
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  #heart-button {
+    background-color: #ff6262; /* Heart color */
+    color: #fff; /* Text color */
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #heart-button:hover {
+    background-color: #e05252; /* Darker color on hover */
+  }
+
+  #sweet-message {
+    font-size: 22px;
+    color: #333; /* Message text color */
+    line-height: 1.8;
+  }
+
+  #footer-text {
+    font-size: 14px;
+    color: #666; /* Footer text color */
+    margin-top: 20px;
+  }
+</style>
+
+<button id="heart-button" onclick="revealMessage()">Open me</button>
+
+<div id="message-container">
+  <p id="sweet-message">Made for the love of my life ill do everything for you</p>
+  <p id="footer-text">Made by Bas <3</p>
+</div>
+
+<script>
+  function revealMessage() {
+    var button = document.getElementById('heart-button');
+    var messageContainer = document.getElementById('message-container');
+    
+    // Hide the button
+    button.style.display = 'none';
+    
+    // Display the message container
+    messageContainer.style.display = 'block';
+  }
+</script>
