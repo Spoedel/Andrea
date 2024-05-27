@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Mireles</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #FFC1CC;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+            position: relative; /* Added position relative to body for absolute positioning of the image */
+        }
+
+        header {
+            background-color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        header:before {
+            content: '';
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Added position relative to main for absolute positioning of the image */
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #333;
+            border-bottom: 2px solid #FDA172;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .content p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .content a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #333;
+            background-color: #FDA172;
+            border-radius: 5px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .content a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .image-container {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 2rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.75rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Andrea Mireles' Website</h1>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Bienvenidos </h2>
+            <p>a mi página</p>
+            <a href="https://www.instagram.com/basandandrea/">mi Instagram</a>
+            <a href="https://open.spotify.com/track/6VhuP99TE6gYNQRJIlAWFD?si=-W9RQdcIQPSHQx2MWQXC2Q">mi canción favorita   </a>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/q1IRSY5.png" alt="Andrea Mireles" style="width: 300px;">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Spoedel</p>
+    </footer>
+</body>
+</html>
