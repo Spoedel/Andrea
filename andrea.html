@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why You Should Stay With Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://i.ibb.co/99tyxM2K/last.png') no-repeat center center/cover;
+            text-align: center;
+            padding: 20px;
+            animation: bgZoom 15s infinite alternate ease-in-out;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 90%;
+            width: 500px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            min-height: 250px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .reason, .final-message {
+            display: none;
+            font-size: 22px;
+            font-weight: 500;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+        }
+        .active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .start-screen {
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .final-message {
+            font-size: 30px;
+            font-weight: bold;
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .final-message.active {
+            display: block;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 12px 24px;
+            background: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.2s ease-in-out, background 0.3s;
+            box-shadow: 0px 4px 12px rgba(255, 64, 129, 0.5);
+        }
+        .btn:hover {
+            background: #e6005c;
+            transform: scale(1.08);
+        }
+        .btn.pulse {
+            animation: pulse 1.5s infinite;
+        }
+        .hidden {
+            display: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bgZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="start-screen active">
+            Click this to Start<br>
+            <button class="btn pulse" onclick="startSlideshow()">Start</button>
+        </div>
+        <div class="reason">Andrea from the moment i met you ive always believed you would end up being my wife ❤️</div>
+        <div class="reason">I know recently i really messed up and our relationship wasnt the best lately</div>
+        <div class="reason">But i have so many good memories with you like playing minecraft playing roblox games with the searching thing the fnaf games playing the new hypixel diastors </div>
+        <div class="reason">I really wouldnt want that to end and even tho you believe you are bad for me, trust me you arent at all my life before you was lowkey sad i know i talk about it like it was good but all i did was playing minecraft and just go to school you gave my life a reason</div>
+        <div class="reason">I think you are beautiful even tho i sometimes talk bad abt things i love the way you look the way your hair looks the way your face looks its so cute and ive always wished to one day hug you and kiss you on the face its so cute your cheeks your nose your eyes i love it all</div>
+        <div class="reason">The fact you feel the same way as me about alot of things about marriage God everything i wouldnt find that anywhere else on the world we had often some fights but if you realise it its beautiful how we manage to move forward and forgive each other for it</div>
+        <div class="reason">I turned 18 as you obvly know and ive been working on myself and trying to get in a better state of mind you are my biggest motivation for it because of you i wanna improve myself because of you i know how much i am actually worth because of you i know that bad things dont matter as long as i have you</div>
+        <div class="reason">loving you has been the bests i never been loved like this not even by my parents or my friends or anyone its been 2 crazy years which changed my life completely you are like the thing thats holding me togheter whenever i have a bad day i think about you and i feel better</div>
+        <div class="reason">You really are my motivation in life work is hard and annoying and im glad its temporary but whenever i have a long shift its nice coming home and sitting on the bike back  home and texting u on the way home having nice messages even tho i find it hard to express to that i like it because of my past</div>
+        <div class="reason">About my past, you are the one of the only who knows it all and who understands it all who undersands how i work who understands my needs and understands the sitution with my family and everything which is nice to know to share my life with someone</div>
+        <div class="reason">We have always believed God put us togheter and i still hold on to that i think prayer and rosary will get us closer its sad that we stopped with that because i remember how peaceful life felt praying the rosary with you i never felt more peace in my life i wanna start focusing on building our relationship on prayer and God and im hoping you are too and it doesnt have to be fast we can do it slowely and just have a quick break to reflect on ourselfs and pray i hope you get what i mean</div>
+        <div class="reason">You are everything to me, and I can't imagine my life without you even if its a break / a quick pause between us everything to be reuinited again with you and ill create a list of improvements which im gonna hold on to</div>
+
+        <div class="final-message">
+            i love from the netherlands to mexico and the moon and back<br>
+            <p>I spend the entire morning on this and i hope you appriecate it and appriecate the little background i made, i love you ps click the button</p>
+            <a href="https://www.youtube.com/watch?v=rsWsJahjboQ" class="btn">Click Me</a>
+        </div>
+        
+        <div class="buttons hidden" id="nav-buttons">
+            <button class="btn hidden" onclick="changeSlide(-1)" id="prev">⬅️ Previous</button>
+            <button class="btn" onclick="changeSlide(1)" id="next">Next ➡️</button>
+        </div>
+    </div>
+
+    <script>
+        let index = -1;
+        const elements = document.querySelectorAll('.reason');
+        const startScreen = document.querySelector('.start-screen');
+        const finalMessage = document.querySelector('.final-message');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const navButtons = document.getElementById('nav-buttons');
+
+        function startSlideshow() {
+            startScreen.classList.add('hidden');
+            index = 0;
+            elements[index].classList.add('active');
+            navButtons.classList.remove('hidden');
+            prevButton.classList.add('hidden');
+        }
+
+        function changeSlide(step) {
+            if (index >= 0 && index < elements.length) {
+                elements[index].classList.remove('active');
+            }
+            index += step;
+            
+            if (index === 0) {
+                prevButton.classList.add('hidden');
+            } else {
+                prevButton.classList.remove('hidden');
+            }
+            
+            if (index >= elements.length) {
+                elements.forEach(r => r.classList.add('hidden'));
+                finalMessage.classList.add('active');
+                navButtons.classList.add('hidden');
+            } else {
+                elements[index].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
